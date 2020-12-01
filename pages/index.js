@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
         <p>
           <Link href="/user">
-            <a>Ir para proximo nivel</a>
+            <a>Ir para proximo nivel rapidamente</a>
           </Link>
         </p>
       </main>
