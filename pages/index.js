@@ -1,41 +1,22 @@
-import Head from 'next/head'
+import Layout from "../components/Layout";
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+// import Head from 'next/head'
+// import styles from '../styles/Home.module.css'
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>DFNextApp</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Index = () =>   
+  <Layout>
+      <h1>Hello, world!</h1>
+      <p>
+        <Link href="/user">
+          <a>Ir para proximo nivel rapidamente</a>
+        </Link>
+      </p>
+    
+      <p>
+        <Link href="/stars">
+          <a>Estrelas</a>
+        </Link>
+      </p>
+  </Layout>;
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <p>
-          <Link href="/user">
-            <a>Ir para proximo nivel rapidamente</a>
-          </Link>
-        </p>
-        <p>
-          <Link href="/stars">
-            <a>Estrelas</a>
-          </Link>
-        </p>
-      </main>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer> */}
-    </div>
-  )
-}
+export default Index;
