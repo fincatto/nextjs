@@ -19,6 +19,11 @@ export default function Home() {
             <a>Ir para proximo nivel rapidamente</a>
           </Link>
         </p>
+        <p>
+          <Link href="/stars">
+            <a>Estrelas</a>
+          </Link>
+        </p>
       </main>
 
       {/* <footer className={styles.footer}>
